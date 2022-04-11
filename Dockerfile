@@ -38,6 +38,7 @@ RUN apt-get update && \
         x11vnc \
         xdg-utils \
         git \
+        x11-utils \
         xvfb && \
     git clone --depth 1 https://github.com/novnc/noVNC ${NOVNC_HOME} && \
     git clone --depth 1 https://github.com/novnc/websockify ${NOVNC_HOME}/utils/websockify && \
