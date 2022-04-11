@@ -53,8 +53,8 @@ RUN apt-get update && \
 # Copy Supervisor Daemon configuration 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-# Copy Signum wallpaper
-COPY signum-wallpaper.jpg /usr/share/images/fluxbox/signum-wallpaper.jpg
+# Copy Spacemesh wallpaper
+COPY spacemesh-wallpaper.png /usr/share/images/fluxbox/spacemesh-wallpaper.png
 
 # Copy Fluxbox configurations
 ADD ./fluxbox ${ROOT_HOME}/.fluxbox
