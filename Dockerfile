@@ -59,7 +59,12 @@ COPY spacemesh-wallpaper.png /usr/share/images/fluxbox/spacemesh-wallpaper.png
 # Copy Fluxbox configurations
 ADD ./fluxbox ${ROOT_HOME}/.fluxbox
 
+# Expose the noVNC port
 EXPOSE 8080
+
+# Expose the SMAPP node port
+EXPOSE 7513/tcp
+EXPOSE 7513/udp
 
 # Setup environment variables
 ENV HOME=${ROOT_HOME} \
